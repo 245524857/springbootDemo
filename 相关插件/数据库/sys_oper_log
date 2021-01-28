@@ -1,0 +1,150 @@
+--------------------------------------------------------
+--  File created - Thursday-January-28-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table SYS_OPER_LOG
+--------------------------------------------------------
+
+  CREATE TABLE "DEV_USR"."SYS_OPER_LOG" 
+   (	"OPER_ID" NUMBER(20,0), 
+	"TITLE" VARCHAR2(50 BYTE) DEFAULT '', 
+	"BUSINESS_TYPE" NUMBER(2,0) DEFAULT 0, 
+	"METHOD" VARCHAR2(100 BYTE) DEFAULT '', 
+	"REQUEST_METHOD" VARCHAR2(10 BYTE) DEFAULT '', 
+	"OPERATOR_TYPE" NUMBER(1,0) DEFAULT 0, 
+	"OPER_NAME" VARCHAR2(50 BYTE) DEFAULT '', 
+	"DEPT_NAME" VARCHAR2(50 BYTE) DEFAULT '', 
+	"OPER_URL" VARCHAR2(255 BYTE) DEFAULT '', 
+	"OPER_IP" VARCHAR2(50 BYTE) DEFAULT '', 
+	"OPER_LOCATION" VARCHAR2(255 BYTE) DEFAULT '', 
+	"OPER_PARAM" VARCHAR2(2000 BYTE) DEFAULT '', 
+	"JSON_RESULT" VARCHAR2(2000 BYTE) DEFAULT '', 
+	"STATUS" NUMBER(1,0) DEFAULT 0, 
+	"ERROR_MSG" VARCHAR2(2000 BYTE) DEFAULT '', 
+	"OPER_TIME" DATE
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TS_HRM_DAT" ;
+
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_ID" IS '????seq_sys_oper_log.nextval';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."TITLE" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."BUSINESS_TYPE" IS '?????0?? 1?? 2?? 3???';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."METHOD" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."REQUEST_METHOD" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPERATOR_TYPE" IS '?????0?? 1???? 2??????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_NAME" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."DEPT_NAME" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_URL" IS '??URL';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_IP" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_LOCATION" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_PARAM" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."JSON_RESULT" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."STATUS" IS '?????0?? 1???';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."ERROR_MSG" IS '????';
+   COMMENT ON COLUMN "DEV_USR"."SYS_OPER_LOG"."OPER_TIME" IS '????';
+   COMMENT ON TABLE "DEV_USR"."SYS_OPER_LOG"  IS '??????';
+REM INSERTING into DEV_USR.SYS_OPER_LOG
+SET DEFINE OFF;
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (147,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"0","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"nexperia/prepare/empDefine/index","children":[],"createTime":1611565770000,"updateBy":"admin","isFrame":"1","menuId":2001,"menuType":"M","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (149,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,null,null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"clipboard","orderNum":"1","menuName":"????","params":{},"parentId":2000,"isCache":"1","path":"empDefine","component":"nexperia/prepare/empDefine/index","children":[],"createTime":1611716021000,"updateBy":"admin","isFrame":"1","menuId":2020,"menuType":"C","status":"0"}','{"msg":"????","code":500}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (155,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"dashboard","orderNum":"4","menuName":"????/?????","params":{},"parentId":2001,"isCache":"0","path":"employeeDept","component":"nexperia/prepare/empDefine/employeeDept/index","children":[],"createTime":1611732985000,"updateBy":"admin","isFrame":"1","menuId":2025,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (140,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"clipboard","orderNum":"1","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"nexperia/prepare/empDefine/index","createBy":"admin","children":[],"isFrame":"1","menuId":2020,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (141,'????',3,'com.smart.web.controller.system.SysMenuController.remove()','DELETE',1,'admin',null,'/system/menu/2020','127.0.0.1','??IP','{menuId=2020}','null',1,'
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+### The error may exist in file [C:\Users\nx016431\Desktop\hrm-admin-dev\smart-system\target\classes\mapper\system\SysRoleMenuMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(1) from sys_role_menu where menu_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+',to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (142,'????',3,'com.smart.web.controller.system.SysMenuController.remove()','DELETE',1,'admin',null,'/system/menu/2020','127.0.0.1','??IP','{menuId=2020}','null',1,'
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+### The error may exist in file [C:\Users\nx016431\Desktop\hrm-admin-dev\smart-system\target\classes\mapper\system\SysRoleMenuMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(1) from sys_role_menu where menu_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+',to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (143,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"chart","orderNum":"1","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"dept","component":"nexperia/prepare/empDefine/dept/index","createBy":"admin","children":[],"isFrame":"1","menuId":2021,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (150,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"3","menuName":"????2","params":{},"parentId":2001,"isCache":"0","path":"dept2","component":"nexperia/prepare/empDefine/dept2/index","createBy":"admin","children":[],"isFrame":"1","menuId":2024,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (152,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"dashboard","orderNum":"4","menuName":"????\\?????","params":{},"parentId":2001,"isCache":"0","path":"empDefine/employeeDeptAndSubDept","component":"nexperia/prepare/empDefine/employeeDeptAndSubDept/index","children":[],"createTime":1611732985000,"updateBy":"admin","isFrame":"1","menuId":2025,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (153,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"dashboard","orderNum":"4","menuName":"????\\?????","params":{},"parentId":2001,"isCache":"0","path":"employeeDept","component":"nexperia/prepare/empDefine/employeeDept/index","children":[],"createTime":1611732985000,"updateBy":"admin","isFrame":"1","menuId":2025,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (154,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"dashboard","orderNum":"4","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"employeeDept","component":"nexperia/prepare/empDefine/employeeDept/index","children":[],"createTime":1611732985000,"updateBy":"admin","isFrame":"1","menuId":2025,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (100,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"logininfor","orderNum":"0","menuName":"????","params":{},"parentId":0,"isCache":"0","path":"nexperia/prepare","createBy":"admin","children":[],"isFrame":"1","menuId":2000,"menuType":"M","status":"0"}','{"msg":"????","code":200}',0,null,to_date('25-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (101,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"0","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"nexperia/prepare/empDefine/index","createBy":"admin","children":[],"isFrame":"1","menuId":2001,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('25-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (102,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"form","orderNum":"0","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"company","component":"nexperia/prepare/empDefine/company/index","createBy":"admin","children":[],"isFrame":"1","menuId":2002,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('25-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (103,'????',3,'com.smart.web.controller.system.SysMenuController.remove()','DELETE',1,'admin',null,'/system/menu/2002','127.0.0.1','??IP','{menuId=2002}','null',1,'
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+
+### The error may exist in file [C:\Users\nx015457\file\coding\dev\hrm-admin-dev\smart-system\target\classes\mapper\system\SysRoleMenuMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(1) from sys_role_menu where menu_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+',to_date('25-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (104,'????',3,'com.smart.web.controller.system.SysMenuController.remove()','DELETE',1,'admin',null,'/system/menu/2002','127.0.0.1','??IP','{menuId=2002}','null',1,'
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+
+### The error may exist in file [C:\Users\nx015457\file\coding\dev\hrm-admin-dev\smart-system\target\classes\mapper\system\SysRoleMenuMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(1) from sys_role_menu where menu_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+',to_date('25-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (105,'????',3,'com.smart.web.controller.system.SysMenuController.remove()','DELETE',1,'admin',null,'/system/menu/2002','127.0.0.1','??IP','{menuId=2002}','null',1,'
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+
+### The error may exist in file [C:\Users\nx015457\file\coding\dev\hrm-admin-dev\smart-system\target\classes\mapper\system\SysRoleMenuMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select count(1) from sys_role_menu where menu_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: ???????
+',to_date('25-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (120,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"0","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"empDefine nexperia/prepare/empDefine/index","children":[],"createTime":1611565770000,"updateBy":"admin","isFrame":"1","menuId":2001,"menuType":"M","status":"0"}','{"msg":"????","code":200}',0,null,to_date('26-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (121,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"form","orderNum":"0","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"company","component":"company nexperia/prepare/empDefine/company/index","children":[],"createTime":1611565879000,"updateBy":"admin","isFrame":"1","menuId":2002,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('26-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (122,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"0","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"nexperia/prepare/empDefine/index","children":[],"createTime":1611565770000,"updateBy":"admin","isFrame":"1","menuId":2001,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('26-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (123,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"0","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"nexperia/prepare/empDefine/index","children":[],"createTime":1611565770000,"updateBy":"admin","isFrame":"1","menuId":2001,"menuType":"M","status":"0"}','{"msg":"????","code":200}',0,null,to_date('26-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (124,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"form","orderNum":"0","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"company","component":"nexperia/prepare/empDefine/company/index","children":[],"createTime":1611565879000,"updateBy":"admin","isFrame":"1","menuId":2002,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('26-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (146,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"example","orderNum":"0","menuName":"????","params":{},"parentId":2000,"isCache":"0","path":"empDefine","component":"nexperia/prepare/empDefine/index","children":[],"createTime":1611565770000,"updateBy":"admin","isFrame":"1","menuId":2001,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (148,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,null,null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"clipboard","orderNum":"1","menuName":"????","params":{},"parentId":2000,"isCache":"1","path":"empDefine","component":"nexperia/prepare/empDefine/index","children":[],"createTime":1611716021000,"updateBy":"admin","isFrame":"1","menuId":2020,"menuType":"C","status":"0"}','{"msg":"????","code":500}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (144,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"date-range","orderNum":"8","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"employee","component":"nexperia/prepare/empDefine/employee/index","createBy":"admin","children":[],"isFrame":"1","menuId":2022,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (145,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"message","orderNum":"2","menuName":"????","params":{},"parentId":2001,"isCache":"0","path":"organization","component":"nexperia/prepare/empDefine/organization/index","createBy":"admin","children":[],"isFrame":"1","menuId":2023,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (151,'????',1,'com.smart.web.controller.system.SysMenuController.add()','POST',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"dashboard","orderNum":"4","menuName":"????\\?????","params":{},"parentId":2001,"isCache":"0","path":"employeeDept","component":"nexperia/prepare/empDefine/employeeDeptAndSubDept/index","createBy":"admin","children":[],"isFrame":"1","menuId":2025,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+Insert into DEV_USR.SYS_OPER_LOG (OPER_ID,TITLE,BUSINESS_TYPE,METHOD,REQUEST_METHOD,OPERATOR_TYPE,OPER_NAME,DEPT_NAME,OPER_URL,OPER_IP,OPER_LOCATION,OPER_PARAM,JSON_RESULT,STATUS,ERROR_MSG,OPER_TIME) values (156,'????',2,'com.smart.web.controller.system.SysMenuController.edit()','PUT',1,'admin',null,'/system/menu','127.0.0.1','??IP','{"visible":"0","icon":"dashboard","orderNum":"4","menuName":"????/?????","params":{},"parentId":2001,"isCache":"0","path":"employeeDept","component":"nexperia/prepare/empDefine/employeeDept/index","children":[],"createTime":1611732985000,"updateBy":"admin","isFrame":"1","menuId":2025,"menuType":"C","status":"0"}','{"msg":"????","code":200}',0,null,to_date('27-JAN-21','DD-MON-RR'));
+--------------------------------------------------------
+--  DDL for Index PK_SYS_OPER_LOG
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "DEV_USR"."PK_SYS_OPER_LOG" ON "DEV_USR"."SYS_OPER_LOG" ("OPER_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TS_HRM_DAT" ;
+--------------------------------------------------------
+--  Constraints for Table SYS_OPER_LOG
+--------------------------------------------------------
+
+  ALTER TABLE "DEV_USR"."SYS_OPER_LOG" ADD CONSTRAINT "PK_SYS_OPER_LOG" PRIMARY KEY ("OPER_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TS_HRM_DAT"  ENABLE;
+  ALTER TABLE "DEV_USR"."SYS_OPER_LOG" MODIFY ("OPER_ID" NOT NULL ENABLE);
